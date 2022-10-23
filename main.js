@@ -23,19 +23,16 @@ let activities = function (transactions){
 activities(transactions)
 
 const withdrawl = transactions.filter(amount => amount < 0)
-console.log(withdrawl)
-const total = transactions.reduce((bal, cur) => bal + cur)
 
 
 // BALANCE START//
 //TRANSACTIONS  = [200, 250, -100, 300, -500, 600]//
+const total = transactions.reduce((bal, cur) => bal + cur)
 const updateBalance = function(transactions){
     let balance = document.getElementById("balance")
 
     return balance.innerText = total
-
-
 }
 
 updateBalance()
-// BALANCE START//
+// BALANCE END//
