@@ -27,13 +27,15 @@ console.log(withdrawl)
 const total = transactions.reduce((bal, cur) => bal + cur)
 
 
+// BALANCE START//
+//TRANSACTIONS  = [200, 250, -100, 300, -500, 600]//
 const updateBalance = function(transactions){
     let balance = document.getElementById("balance")
 
-    console.log(total)
     return balance.innerText = total
 
 
 }
 
 updateBalance()
+// BALANCE START//
